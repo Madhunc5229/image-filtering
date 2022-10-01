@@ -56,23 +56,18 @@ def gaussian_2D_filter(filter_size, sigma):
 
 
 def imgfilter(image, filter):
-    # YOUR CODE HERE
     img = cv2.filter2D(image, -1, filter)
     return img
 
 
 def log_mag_FFT(image):
-    # YOUR CODE HERE
     output = np.log(np.abs(np.fft.fftshift(np.fft.fft2(image))))
-    # plt.imshow(output.('uint8'))
-    # plt.show()
     return output
 
 
 def FFT(image):
     dft = cv2.dft(image, flags=cv2.DFT_COMPLEX_OUTPUT)
     dft_shift = np.fft.fftshift(dft)
-    # magnitude_spectrum = 20 * np.log(cv2.magnitude(dft_shift[:, :, 0], dft_shift[:, :, 1]))
     return dft_shift
 
 
@@ -156,29 +151,6 @@ def displayPyramids(G, L):
     fig.savefig(f'{result_path}/FFT_oF_G_L_Pyramid.png')
 
     return
-    # print("size of G: ", len(G))
-    # print("size of L: ", len(L))
-    # count = 0
-    # for img in G:
-    #     print("Gaussian pyramid shapes: ", img.shape)
-    #     img = toUint8(img)
-    #     cv2.imshow('pyramid', img)
-    #     cv2.waitKey(0)
-    #     print("data type: ", img.dtype)
-    #     name = 'output/G' + str(count) + '.png'
-    #     cv2.imwrite(name, img)
-    #     count += 1
-
-    # count = 0
-    # for img in L:
-    #     print("Laplacian pyramid shapes: ", img.shape)
-    #     img = toUint8(img)
-    #     cv2.imshow('pyramid', img)
-    #     cv2.waitKey(0)
-    #     name = 'output/L' + str(count) + '.png'
-    #     cv2.imwrite(name, img)
-    #     count += 1
-    # return
 
 
 def reconstructLaplacianPyramid(G, L, cutoff_frequency):
@@ -273,13 +245,11 @@ def edgeGradient(magnitude, orientation, canny):
     '''
     if canny:
         img = cv2.Canny(magnitude, 10, 130)
-        # cv2.imshow('Canny edges', img)
-        # cv2.waitKey(0)
+
         return img
 
     else:
-
-        # magnitude = toUint8(magnitude)
+        #Non-maxima suppression
         magnitude = magnitude / magnitude.max() * 255
         non_maxima = np.zeros_like(magnitude, dtype=np.uint8)
         orientation = orientation * 180 / np.pi
@@ -408,14 +378,6 @@ def orientedFilterMagnitude(im, sigma):
         if max == 6:
             orientation[i] = np.arctan2(im_b_res_to_135[i],im_b_res_to_45[i]) 
 
-        # if max == 0 or max == 1 or max == 2:
-        #     orientation[i] = 0
-        # if max == 3 or max == 4 or max == 5:
-        #     orientation[i] = 45
-        # if max == 6 or max == 7 or max == 8:
-        #     orientation[i] = 90
-        # if max == 9 or max == 10 or max == 11:
-        #     orientation[i] = 135
     magnitude = np.reshape(magnitude,image_2D_shape)
     orientation = np.reshape(orientation,image_2D_shape)
 
