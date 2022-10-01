@@ -37,7 +37,7 @@ Original Image:![o](https://user-images.githubusercontent.com/61328094/193398046
 
 Magnitude using x and y Gaussian derivative            |  After Non-maxima suppresion
 :-------------------------:|:-------------------------:
-![m1](https://user-images.githubusercontent.com/61328094/193398095-291fd70e-f002-4147-bda4-6eea349fccd6.png) |  ![c2](https://user-images.githubusercontent.com/61328094/193398101-05499df7-0744-40eb-abd6-c7da2a696eda.png)
+![m1](https://user-images.githubusercontent.com/61328094/193398095-291fd70e-f002-4147-bda4-6eea349fccd6.png) |  ![c1](https://user-images.githubusercontent.com/61328094/193398316-3a39d427-4056-47e1-8438-7b6127f44558.png)
 
 Magnitude using oriented filters          |  After Non-maxima suppresion
 :-------------------------:|:-------------------------:
@@ -46,10 +46,11 @@ Magnitude using oriented filters          |  After Non-maxima suppresion
 ### 4. Template matching (finding waldo)
 #### The goal in this program is to find waldo in a puzzle using SSD(sum of squared differences) as the matching criteria for template.
 
-Waldo
-![waldo](https://user-images.githubusercontent.com/61328094/193398250-8c1caeae-deb3-4f70-a2f4-a1e3cee8cce7.png)
+Waldo  
+![waldo](https://user-images.githubusercontent.com/61328094/193398250-8c1caeae-deb3-4f70-a2f4-a1e3cee8cce7.png)  
 Found in map using template matching
 ![foundP2](https://user-images.githubusercontent.com/61328094/193398267-8955afb6-c441-4f95-aac5-81745aa3dc30.png)
+
 
 
 
