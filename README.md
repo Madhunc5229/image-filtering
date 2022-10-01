@@ -32,7 +32,7 @@ Reconstructed Image          |
 
 ### 3. Edge detection pipeline
 #### In this edge detection pipeline, the gradient magnitude was computed two ways, one using only x and y Gaussian derivative and the other using 4 oriented filters followed by non-maxima suppression. 
-Original Imag          | 
+Original Image         | 
 :-------------------------:|
 ![o](https://user-images.githubusercontent.com/61328094/193398046-997f6255-670e-48f4-8edd-2b238b40bf2a.png) | 
 
