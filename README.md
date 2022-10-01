@@ -13,10 +13,9 @@ Low Frequency of Image 1             |  High Frequency of Image 2  | Hybrid Imag
 ![low_frequency_image](https://user-images.githubusercontent.com/61328094/193397724-2e94cb7c-8246-4ca5-bc1e-8350e62c2804.png)  |  !![high_frequency_image](https://user-images.githubusercontent.com/61328094/193397731-c96d361a-9039-419a-aac1-663e503f10ea.png)  |  ![hybrid_image](https://user-images.githubusercontent.com/61328094/193397742-9c814c0a-7616-4005-8352-0b8591c51730.png)
 
 
+### 1. Gaussian and Laplacian Pyramid for lossless rescontsruction
+#### Constructing a Gaussian and Laplacian pyramids help preserve the important features of an image which helps in lossless reconstruction
 
-Low frequency image 
-High frequency image 
-Hybrid image 
 
 
 
