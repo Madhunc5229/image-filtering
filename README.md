@@ -25,4 +25,33 @@ Gaussian and Laplacian Pyramid:
 FFT magnitude of Gaussian and Laplacian Pyramid:
 ![FFT_oF_G_L_Pyramid](https://user-images.githubusercontent.com/61328094/193397918-76291a85-afc1-4850-a82b-3973be7bdc0b.png)
 
+Reconstructed Image          | 
+:-------------------------:|
+![reconstructedImage](https://user-images.githubusercontent.com/61328094/193397880-01609ef8-346e-453c-9cd6-bd4885eb5949.png) | 
+
+
+### 3. Edge detection pipeline
+#### In this edge detection pipeline, the gradient magnitude was computed two ways, one using only x and y Gaussian derivative and the other using 4 oriented filters followed by non-maxima suppression. 
+
+Original Image:![o](https://user-images.githubusercontent.com/61328094/193398046-997f6255-670e-48f4-8edd-2b238b40bf2a.png)
+
+Magnitude using x and y Gaussian derivative            |  After Non-maxima suppresion
+:-------------------------:|:-------------------------:
+![m1](https://user-images.githubusercontent.com/61328094/193398095-291fd70e-f002-4147-bda4-6eea349fccd6.png) |  ![c2](https://user-images.githubusercontent.com/61328094/193398101-05499df7-0744-40eb-abd6-c7da2a696eda.png)
+
+Magnitude using oriented filters          |  After Non-maxima suppresion
+:-------------------------:|:-------------------------:
+![m2](https://user-images.githubusercontent.com/61328094/193398127-73375e4c-62f8-4d4c-9e1d-82461ba17dbe.png) |  ![c2](https://user-images.githubusercontent.com/61328094/193398134-8a082ffa-bdb2-4588-84b5-d41338a47054.png)
+
+### 4. Template matching (finding waldo)
+#### The goal in this program is to find waldo in a puzzle using SSD(sum of squared differences) as the matching criteria for template.
+
+Waldo
+![waldo](https://user-images.githubusercontent.com/61328094/193398250-8c1caeae-deb3-4f70-a2f4-a1e3cee8cce7.png)
+Found in map using template matching
+![foundP2](https://user-images.githubusercontent.com/61328094/193398267-8955afb6-c441-4f95-aac5-81745aa3dc30.png)
+
+
+
+
 
