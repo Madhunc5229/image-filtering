@@ -5,7 +5,7 @@
 * Gaussian and Laplacian pyramids  
 * Edge detection pipeline 
 * Template mathcing
-
+All the implementation are programmed from scratch without using any in-built functions except for minor operations such as convolution
 
 ### 1. Hybrid Images
 #### To generate a hybrid image, we take low frequency of one image and high frequency of another image and add both the images 
