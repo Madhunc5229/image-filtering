@@ -4,7 +4,7 @@
 * Hybrid images  
 * Gaussian and Laplacian pyramids  
 * Edge detection pipeline 
-* Template mathcing
+* Template mathcing  
 All the implementation are programmed from scratch without using any in-built functions except for minor operations such as convolution
 
 ### 1. Hybrid Images
